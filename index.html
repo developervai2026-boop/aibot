@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমার চ্যাটবট</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-header">
+            <h2>🤖 আমার চ্যাটবট</h2>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="bot-message">
+                <span>হ্যালো! আমি তোমার বট। কিভাবে সাহায্য করতে পারি?</span>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="userInput" placeholder="তোমার কথা লিখো..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">পাঠাও</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
